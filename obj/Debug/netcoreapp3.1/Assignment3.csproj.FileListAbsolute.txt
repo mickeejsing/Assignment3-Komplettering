@@ -1,0 +1,13 @@
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.exe
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.deps.json
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.json
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.dev.json
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\bin\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.csprojAssemblyReference.cache
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfoInputs.cache
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfo.cs
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\micke\Desktop\Assignment-3-1DV607\Assignment3\obj\Debug\netcoreapp3.1\Assignment3.genruntimeconfig.cache
