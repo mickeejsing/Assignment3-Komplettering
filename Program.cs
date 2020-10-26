@@ -9,7 +9,7 @@ namespace BlackJack
     {
         static void Main(string[] args)
         {   
-            Console.WriteLine("TEST");
+            
             model.Game g = new model.Game();
             view.IView v = new view.SimpleView(); // new view.SwedishView();
             controller.PlayGame ctrl = new controller.PlayGame();
