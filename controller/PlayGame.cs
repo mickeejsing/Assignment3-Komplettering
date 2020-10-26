@@ -21,6 +21,8 @@ namespace BlackJack.controller
 
             int input = a_view.GetInput();
 
+            /*
+            // Tidigare implemenation som orsakar ett hidden dependecy. Lösning följer nedan.
             if (input == 'p')
             {
                 a_game.NewGame();
@@ -35,6 +37,23 @@ namespace BlackJack.controller
             }
 
             return input != 'q';
+            */
+
+            if(a_view.IsPlay(input)) {
+
+                a_game.NewGame();
+
+            } else if (a_view.IsHit(input)) {
+
+                a_game.Hit();
+
+            } else if (a_view.IsStand(input)) {
+
+                a_game.Stand();
+
+            } 
+
+            return !a_view.IsQuit(input);
         }
     }
 }

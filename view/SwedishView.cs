@@ -54,6 +54,23 @@ namespace BlackJack.view
             }
         }
 
+        // Added methods below. Must exist according to the IView.
+        // Maybe we want to add the inputs as private statics?
+        // TODO: Translate to Swedish.
+
+        public bool IsPlay(int input) {
+            return input == 'p';
+        }
+        public bool IsHit(int input) {
+            return input == 'h';
+        }
+        public bool IsStand(int input) {
+            return input == 's';
+        }
+        public bool IsQuit(int input) {
+            return input == 'q';
+        }
+
         private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score)
         {
             System.Console.WriteLine("{0} Har: ", a_name);
