@@ -58,5 +58,17 @@ namespace BlackJack.model
 
             return score;
         }
+
+        // Added class.
+        public bool IsSoftSeventeen() {
+            foreach (Card c in GetHand())
+            {
+                if(c.GetValue() == Card.Value.Ace) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
     }
 }

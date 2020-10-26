@@ -23,6 +23,27 @@ namespace BlackJack.model
             }
 
             Shuffle();
+
+            /*
+
+            TO TEST
+
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Queen));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Three));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Two));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Two));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Two));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ten));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            AddCard(new Card(Card.Color.Hearts,Card.Value.Ace));
+            
+            */
         }
 
         public Card GetCard()
