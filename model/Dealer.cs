@@ -12,12 +12,14 @@ namespace BlackJack.model
 
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
+        private rules.IResultStrategy m_ResultRule;
 
 
         public Dealer(rules.RulesFactory a_rulesFactory)
         {
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
+            m_ResultRule = a_rulesFactory.GetResultRule();
         }
 
         public void Stand()
@@ -69,8 +71,18 @@ namespace BlackJack.model
             else if (CalcScore() > g_maxScore)
             {
                 return false;
+            } 
+            
+            // Added code.
+            else if (CalcScore() > a_player.CalcScore()) {
+                return true;
             }
-            return CalcScore() >= a_player.CalcScore();
+
+            else if (CalcScore() < a_player.CalcScore()) {
+                return false;
+            }
+
+            return m_ResultRule.IsDealerWinnerEqualScore();
         }
 
         public bool IsGameOver()
