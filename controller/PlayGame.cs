@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace BlackJack.controller
 {
@@ -50,12 +51,7 @@ namespace BlackJack.controller
 
         public void DynamicDisplayPlayerHand(dynamic a_hand, int a_score, string name) {
             a_view.DynamicDisplayCardsForPlayer(name, a_hand, a_score);
+            Thread.Sleep(3000);
         }
-
-        /*
-        public void DynamicDisplayDealerHand(dynamic a_hand, int a_score) {
-            a_view.DynamicDisplayCardsForDealer(a_hand, a_score);
-        }
-        */
     }
 }

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading;
 
 namespace BlackJack.view
 {
@@ -49,7 +48,6 @@ namespace BlackJack.view
 
         public void DynamicDisplayCardsForPlayer(string name, dynamic a_hand, int a_score) {
             this.DisplayHand(name, a_hand, a_score);
-            Thread.Sleep(1000);
         }
 
         public void DisplayGameOver(bool a_dealerIsWinner)
