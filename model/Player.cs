@@ -8,10 +8,43 @@ namespace BlackJack.model
     class Player
     {
         private List<Card> m_hand = new List<Card>();
+        private List<IDealCardsObserver> m_subscribers;
+
+        public Player()
+        {
+            m_subscribers = new List<IDealCardsObserver>();
+        }
+
+        public void AddSubscriber(IDealCardsObserver sub)
+        {
+            m_subscribers.Add(sub);
+        }
+
+        public virtual void NotifySubscribers(/*object playerType*/)
+        {
+            /*
+            foreach (var obs in m_subscribers)
+            {
+                if(playerType == Player) {
+                    obs.DealCardsToPlayer(GetHand(), 1);
+                }
+
+                if(playerType == Dealer) {
+                    obs.DealCardsToDealer(GetHand(), 1);
+                }
+            }
+            */
+
+            foreach (var obs in m_subscribers)
+            {
+                obs.DynamicDisplayPlayerHand(GetHand(), 1);
+            }
+        }
 
         public void DealCard(Card a_card)
         {
             m_hand.Add(a_card);
+            NotifySubscribers();
         }
 
         public IEnumerable<Card> GetHand()

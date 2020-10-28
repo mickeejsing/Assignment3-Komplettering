@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace BlackJack.view
 {
@@ -10,7 +11,7 @@ namespace BlackJack.view
 
         public void DisplayWelcomeMessage()
         {
-            System.Console.Clear();
+            //System.Console.Clear();
             System.Console.WriteLine("Hello Black Jack World");
             System.Console.WriteLine("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
         }
@@ -44,6 +45,20 @@ namespace BlackJack.view
             }
             System.Console.WriteLine("Score: {0}", a_score);
             System.Console.WriteLine("");
+        }
+
+        public void DynamicDisplayCardsForPlayer(dynamic a_hand, int a_score) {
+
+            System.Console.WriteLine("------------------TEST BELOW-----------------------");
+            this.DisplayHand("Player", a_hand, a_score);
+            Thread.Sleep(2000);
+        }
+
+        public void DynamicDisplayCardsForDealer(dynamic a_hand, int a_score) {
+
+            System.Console.WriteLine("------------------TEST BELOW-----------------------");
+            this.DisplayHand("Dealer", a_hand, a_score);
+            Thread.Sleep(2000);
         }
 
         public void DisplayGameOver(bool a_dealerIsWinner)

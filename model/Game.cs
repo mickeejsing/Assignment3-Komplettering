@@ -9,11 +9,13 @@ namespace BlackJack.model
     {
         private model.Dealer m_dealer;
         private model.Player m_player;
+        // private List<IDealCardsObserver> m_subscribers;
 
         public Game()
         {
             m_dealer = new Dealer(new rules.RulesFactory());
             m_player = new Player();
+            // m_subscribers = new List<IDealCardsObserver>();
         }
 
         public bool IsGameOver()
@@ -62,6 +64,12 @@ namespace BlackJack.model
         public int GetPlayerScore()
         {
             return m_player.CalcScore();
+        }
+
+        // Added code.
+        public void AddSubscriber(IDealCardsObserver subscriber) {
+            m_player.AddSubscriber(subscriber);
+            m_dealer.AddSubscriber(subscriber);
         }
     }
 }

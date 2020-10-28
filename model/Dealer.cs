@@ -13,6 +13,7 @@ namespace BlackJack.model
         private rules.INewGameStrategy m_newGameRule;
         private rules.IHitStrategy m_hitRule;
         private rules.IResultStrategy m_ResultRule;
+        private List<IDealCardsObserver> m_subscribers;
 
 
         public Dealer(rules.RulesFactory a_rulesFactory)
@@ -20,6 +21,15 @@ namespace BlackJack.model
             m_newGameRule = a_rulesFactory.GetNewGameRule();
             m_hitRule = a_rulesFactory.GetHitRule();
             m_ResultRule = a_rulesFactory.GetResultRule();
+            m_subscribers = new List<IDealCardsObserver>();
+        }
+
+        public override void NotifySubscribers(/*object playerType*/)
+        {
+            foreach (var obs in m_subscribers)
+            {
+                obs.DynamicDisplayDealerHand(GetHand(), 1);
+            }
         }
 
         public void Stand()
@@ -91,6 +101,7 @@ namespace BlackJack.model
         }
         
         private void GetShowDealCard(Player player, bool show) {
+            NotifySubscribers();
             Card c = m_deck.GetCard();
             c.Show(show);
             player.DealCard(c);
