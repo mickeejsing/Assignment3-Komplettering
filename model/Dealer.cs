@@ -28,8 +28,13 @@ namespace BlackJack.model
         {
             foreach (var obs in m_subscribers)
             {
-                obs.DynamicDisplayDealerHand(GetHand(), 1);
+                obs.DynamicDisplayPlayerHand(GetHand(), CalcScore(), "Dealer");
             }
+        }
+
+        public override void AddSubscriber(IDealCardsObserver sub)
+        {
+            m_subscribers.Add(sub);
         }
 
         public void Stand()

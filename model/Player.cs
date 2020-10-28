@@ -15,7 +15,7 @@ namespace BlackJack.model
             m_subscribers = new List<IDealCardsObserver>();
         }
 
-        public void AddSubscriber(IDealCardsObserver sub)
+        public virtual void AddSubscriber(IDealCardsObserver sub)
         {
             m_subscribers.Add(sub);
         }
@@ -37,7 +37,7 @@ namespace BlackJack.model
 
             foreach (var obs in m_subscribers)
             {
-                obs.DynamicDisplayPlayerHand(GetHand(), 1);
+                obs.DynamicDisplayPlayerHand(GetHand(), CalcScore(), "Player");
             }
         }
 

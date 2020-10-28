@@ -84,18 +84,9 @@ namespace BlackJack.view
         }
 
         // Test
-        public void DynamicDisplayCardsForPlayer(dynamic a_hand, int a_score) {
-
-            System.Console.WriteLine("------------------TEST BELOW-----------------------");
-            this.DisplayHand("Player", a_hand, a_score);
-            Thread.Sleep(2000);
-        }
-
-        public void DynamicDisplayCardsForDealer(dynamic a_hand, int a_score) {
-
-            System.Console.WriteLine("------------------TEST BELOW-----------------------");
-            this.DisplayHand("Dealer", a_hand, a_score);
-            Thread.Sleep(2000);
+        public void DynamicDisplayCardsForPlayer(string name, dynamic a_hand, int a_score) {
+            this.DisplayHand(name, a_hand, a_score);
+            Thread.Sleep(1000);
         }
     }
 }

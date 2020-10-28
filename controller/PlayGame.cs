@@ -19,10 +19,10 @@ namespace BlackJack.controller
 
         public bool Play()
         {
-            //a_view.DisplayWelcomeMessage();
+            a_view.DisplayWelcomeMessage();
             
-            //a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
-            //a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
+            a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
+            a_view.DisplayPlayerHand(a_game.GetPlayerHand(), a_game.GetPlayerScore());
 
             if (a_game.IsGameOver())
             {
@@ -48,12 +48,14 @@ namespace BlackJack.controller
             return !a_view.IsQuit(input);
         }
 
-        public void DynamicDisplayPlayerHand(dynamic a_hand, int a_score) {
-            a_view.DynamicDisplayCardsForPlayer(a_hand, a_score);
+        public void DynamicDisplayPlayerHand(dynamic a_hand, int a_score, string name) {
+            a_view.DynamicDisplayCardsForPlayer(name, a_hand, a_score);
         }
 
+        /*
         public void DynamicDisplayDealerHand(dynamic a_hand, int a_score) {
             a_view.DynamicDisplayCardsForDealer(a_hand, a_score);
         }
+        */
     }
 }
