@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1DV607\\Assignment3.csproj": {}
+    "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1dv607\\Assignment3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1DV607\\Assignment3.csproj": {
+    "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1dv607\\Assignment3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1DV607\\Assignment3.csproj",
+        "projectUniqueName": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1dv607\\Assignment3.csproj",
         "projectName": "Assignment3",
-        "projectPath": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1DV607\\Assignment3.csproj",
+        "projectPath": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1dv607\\Assignment3.csproj",
         "packagesPath": "C:\\Users\\micke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1DV607\\obj\\",
+        "outputPath": "C:\\Users\\micke\\Desktop\\UPPG3\\assignment3-1dv607\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\micke\\AppData\\Roaming\\NuGet\\NuGet.Config"
