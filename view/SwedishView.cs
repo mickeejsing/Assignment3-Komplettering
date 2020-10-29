@@ -82,8 +82,8 @@ namespace BlackJack.view
             System.Console.WriteLine("");
         }
 
-        // Test
-        public void DynamicDisplayCardsForPlayer(string name, dynamic a_hand, int a_score) {
+        // Added method.
+        public void DynamicDisplayCards(string name, dynamic a_hand, int a_score) {
             this.DisplayHand(name, a_hand, a_score);
         }
     }

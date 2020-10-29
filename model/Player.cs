@@ -20,24 +20,11 @@ namespace BlackJack.model
             m_subscribers.Add(sub);
         }
 
-        public virtual void NotifySubscribers(/*object playerType*/)
+        public virtual void NotifySubscribers()
         {
-            /*
             foreach (var obs in m_subscribers)
             {
-                if(playerType == Player) {
-                    obs.DealCardsToPlayer(GetHand(), 1);
-                }
-
-                if(playerType == Dealer) {
-                    obs.DealCardsToDealer(GetHand(), 1);
-                }
-            }
-            */
-
-            foreach (var obs in m_subscribers)
-            {
-                obs.DynamicDisplayPlayerHand(GetHand(), CalcScore(), "Player");
+                obs.DynamicDisplayHand(GetHand(), CalcScore(), "Player");
             }
         }
 

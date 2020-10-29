@@ -5,5 +5,5 @@ using System.Text;
 
 public interface IDealCardsObserver
 {
-    void DynamicDisplayPlayerHand(dynamic a_hand, int a_score, string name);
+    void DynamicDisplayHand(dynamic a_hand, int a_score, string name);
 }

@@ -19,8 +19,6 @@ namespace BlackJack.view
         bool IsHit(int input);
         bool IsStand(int input);
         bool IsQuit(int input);
-
-        //Test
-        void DynamicDisplayCardsForPlayer(string name, dynamic a_hand, int a_score);
+        void DynamicDisplayCards(string name, dynamic a_hand, int a_score);
     }
 }

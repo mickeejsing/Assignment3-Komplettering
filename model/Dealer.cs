@@ -28,7 +28,7 @@ namespace BlackJack.model
         {
             foreach (var obs in m_subscribers)
             {
-                obs.DynamicDisplayPlayerHand(GetHand(), CalcScore(), "Dealer");
+                obs.DynamicDisplayHand(GetHand(), CalcScore(), "Dealer");
             }
         }
 

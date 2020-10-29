@@ -49,8 +49,8 @@ namespace BlackJack.controller
             return !a_view.IsQuit(input);
         }
 
-        public void DynamicDisplayPlayerHand(dynamic a_hand, int a_score, string name) {
-            a_view.DynamicDisplayCardsForPlayer(name, a_hand, a_score);
+        public void DynamicDisplayHand(dynamic a_hand, int a_score, string name) {
+            a_view.DynamicDisplayCards(name, a_hand, a_score);
             Thread.Sleep(3000);
         }
     }
