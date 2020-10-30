@@ -54,9 +54,7 @@ namespace BlackJack.view
             }
         }
 
-        // Added methods below. Must exist according to the IView.
-        // Maybe we want to add the inputs as private statics?
-        // TODO: Translate to Swedish.
+        // Added methods below.
 
         public bool IsPlay(int input) {
             return input == 'p';

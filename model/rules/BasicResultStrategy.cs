@@ -1,4 +1,4 @@
-// ADDED CLASS
+// Added class.
 
 using System;
 using System.Collections.Generic;

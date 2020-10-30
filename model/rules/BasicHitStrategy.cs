@@ -11,7 +11,7 @@ namespace BlackJack.model.rules
 
         public bool DoHit(model.Player a_dealer)
         {
-            // TODO: Remove original code-> return a_dealer.CalcScore() < g_hitLimit;
+            // Added code.
             if(a_dealer.CalcScore() == g_hitLimit && a_dealer.IsSoftSeventeen()) {
                 return true;
             } else if(a_dealer.CalcScore() < g_hitLimit) {
