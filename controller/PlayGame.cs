@@ -19,7 +19,8 @@ namespace BlackJack.controller
         }
 
         public bool Play()
-        {
+        {   
+            bool keepPlaying = true;
             a_view.DisplayWelcomeMessage();
             
             a_view.DisplayDealerHand(a_game.GetDealerHand(), a_game.GetDealerScore());
@@ -30,23 +31,22 @@ namespace BlackJack.controller
                 a_view.DisplayGameOver(a_game.IsDealerWinner());
             }
 
-            int input = a_view.GetInput();
 
-            if(a_view.IsPlay(input)) {
+            Enum input = a_view.GetInput();
 
-                a_game.NewGame();
+            if(input != null) {
 
-            } else if (a_view.IsHit(input)) {
+                switch (input)
+                {
+                    case ViewEnums.Play: a_game.NewGame(); break;
+                    case ViewEnums.Hit: a_game.Hit(); break;
+                    case ViewEnums.Stand: a_game.Stand(); break;
+                    case ViewEnums.Quit: keepPlaying = false; break;
+                    default: break;
+                }
+            }
 
-                a_game.Hit();
-
-            } else if (a_view.IsStand(input)) {
-
-                a_game.Stand();
-
-            } 
-
-            return !a_view.IsQuit(input);
+            return keepPlaying;
         }
 
         public void DynamicDisplayHand(dynamic a_hand, int a_score, string name) {

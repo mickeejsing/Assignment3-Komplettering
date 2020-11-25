@@ -24,3 +24,16 @@ C:\Users\micke\Desktop\UPPG3\assignment3-1DV607\obj\Debug\netcoreapp3.1\Assignme
 C:\Users\micke\Desktop\UPPG3\assignment3-1DV607\obj\Debug\netcoreapp3.1\Assignment3.dll
 C:\Users\micke\Desktop\UPPG3\assignment3-1DV607\obj\Debug\netcoreapp3.1\Assignment3.pdb
 C:\Users\micke\Desktop\UPPG3\assignment3-1DV607\obj\Debug\netcoreapp3.1\Assignment3.genruntimeconfig.cache
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.csprojAssemblyReference.cache
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfoInputs.cache
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.AssemblyInfo.cs
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.csproj.CoreCompileInputs.cache
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.exe
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.deps.json
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.json
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.runtimeconfig.dev.json
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.dll
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\bin\Debug\netcoreapp3.1\Assignment3.pdb
+C:\Users\micke\Desktop\Mikael_Eriksson_Christoffer_Lindow_Ivan_Badal_Assignment_3\obj\Debug\netcoreapp3.1\Assignment3.genruntimeconfig.cache

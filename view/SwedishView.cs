@@ -14,10 +14,7 @@ namespace BlackJack.view
             System.Console.WriteLine("----------------------");
             System.Console.WriteLine("Skriv 'p' för att Spela, 'h' för nytt kort, 's' för att stanna 'q' för att avsluta\n");
         }
-        public int GetInput()
-        {
-            return System.Console.In.Read();
-        }
+
         public void DisplayCard(model.Card a_card)
         {
             if (a_card.GetColor() == model.Card.Color.Hidden)
@@ -54,21 +51,6 @@ namespace BlackJack.view
             }
         }
 
-        // Added methods below.
-
-        public bool IsPlay(int input) {
-            return input == 'p';
-        }
-        public bool IsHit(int input) {
-            return input == 'h';
-        }
-        public bool IsStand(int input) {
-            return input == 's';
-        }
-        public bool IsQuit(int input) {
-            return input == 'q';
-        }
-
         private void DisplayHand(String a_name, IEnumerable<model.Card> a_hand, int a_score)
         {
             System.Console.WriteLine("{0} Har: ", a_name);
@@ -83,6 +65,24 @@ namespace BlackJack.view
         // Added method.
         public void DynamicDisplayCards(string name, dynamic a_hand, int a_score) {
             this.DisplayHand(name, a_hand, a_score);
+        }
+
+        public Enum GetInput()
+        {
+            string input = System.Console.ReadLine();
+            Enum returnEnum = null;
+            
+            switch (input)
+            {   
+                case "p": returnEnum = ViewEnums.Play; break;
+                case "d": returnEnum = ViewEnums.Hit; break;
+                case "s": returnEnum = ViewEnums.Stand; break;
+                case "a": returnEnum = ViewEnums.Quit; break;
+                default: returnEnum = null; break;
+            }
+
+            return returnEnum;
+        
         }
     }
 }

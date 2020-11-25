@@ -7,13 +7,11 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    class BasicResultStrategy : IResultStrategy
+    class DealerLosesResultStrategy : IResultStrategy
     {
-        private const Boolean isDealerWinnerEqual = true;
-
         public bool IsDealerWinnerEqualScore()
         {   
-            return isDealerWinnerEqual;
+            return false;
         }
     }
 }

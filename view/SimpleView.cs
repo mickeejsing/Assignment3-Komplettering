@@ -15,11 +15,6 @@ namespace BlackJack.view
             System.Console.WriteLine("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
         }
 
-        public int GetInput()
-        {
-            return System.Console.In.Read();
-        }
-
         public void DisplayCard(model.Card a_card)
         {
             System.Console.WriteLine("{0} of {1}", a_card.GetValue(), a_card.GetColor());
@@ -65,19 +60,21 @@ namespace BlackJack.view
             
         }
 
-        // Added methods below.
+        public Enum GetInput()
+        {
+            string input = System.Console.ReadLine();
+            Enum returnEnum = null;
+            
+            switch (input)
+            {   
+                case "p": returnEnum = ViewEnums.Play; break;
+                case "h": returnEnum = ViewEnums.Hit; break;
+                case "s": returnEnum = ViewEnums.Stand; break;
+                case "q": returnEnum = ViewEnums.Quit; break;
+                default: returnEnum = null; break;
+            }
 
-        public bool IsPlay(int input) {
-            return input == 'p';
-        }
-        public bool IsHit(int input) {
-            return input == 'h';
-        }
-        public bool IsStand(int input) {
-            return input == 's';
-        }
-        public bool IsQuit(int input) {
-            return input == 'q';
+            return returnEnum;      
         }
     }
 }

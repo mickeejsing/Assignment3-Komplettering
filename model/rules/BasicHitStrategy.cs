@@ -11,14 +11,7 @@ namespace BlackJack.model.rules
 
         public bool DoHit(model.Player a_dealer)
         {
-            // Added code.
-            if(a_dealer.CalcScore() == g_hitLimit && a_dealer.IsSoftSeventeen()) {
-                return true;
-            } else if(a_dealer.CalcScore() < g_hitLimit) {
-                return true;
-            } else {
-                return false;
-            }
+            return a_dealer.CalcScore() < g_hitLimit;
         }
     }
 }

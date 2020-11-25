@@ -8,17 +8,12 @@ namespace BlackJack.view
     interface IView
     {
         void DisplayWelcomeMessage();
-        int GetInput();
+        Enum GetInput();
         void DisplayCard(model.Card a_card);
         void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score);
         void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score);
         void DisplayGameOver(bool a_dealerIsWinner);
 
-        // Added methods.
-        bool IsPlay(int input);
-        bool IsHit(int input);
-        bool IsStand(int input);
-        bool IsQuit(int input);
         void DynamicDisplayCards(string name, dynamic a_hand, int a_score);
     }
 }
